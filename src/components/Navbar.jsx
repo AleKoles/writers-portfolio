@@ -14,7 +14,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="z-20 fixed w-full h-20 flex justify-between items-center px-4 bg-primary text-light">
+    <div className="z-20 fixed w-full h-20 flex justify-between items-center px-4 px-8 md:px-20 bg-primary text-light">
       <div className="flex justify-between items-center gap-4">
         <FaQuoteLeft />
         <h1 className="text-2xl font-semibold">Inna Zhelezovskaya</h1>
