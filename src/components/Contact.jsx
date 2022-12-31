@@ -43,7 +43,7 @@ const Contact = () => {
         </form>
         <div className="flex gap-x-20 m-8 lg:hidden">
           <a
-            href="www.linkedin.com/in/inna-reshetnyak-b2a538102"
+            href="https://www.linkedin.com/in/inna-reshetnyak-b2a538102"
             target="_blank"
             rel="noreferrer"
           >

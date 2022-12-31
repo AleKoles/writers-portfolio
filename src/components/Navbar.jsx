@@ -82,7 +82,7 @@ const Navbar = () => {
           <li className="w-[150px] h-[60px] flex justify-between items-center -ml-24 hover:ml-0 duration-300 bg-primary">
             <a
               className="flex justify-between px-4 items-center w-full text-light"
-              href="www.linkedin.com/in/inna-reshetnyak-b2a538102"
+              href="https://www.linkedin.com/in/inna-reshetnyak-b2a538102"
               rel="noreferrer"
               target="_blank"
             >
