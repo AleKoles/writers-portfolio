@@ -19,14 +19,14 @@ const Home = () => {
           <h3 className="text-3xl sm:text-5xl font-semibold leaning-relaxed">
             An experienced content writer and narrative designer.
           </h3>
-          <div className="flex gap-8">
-            <button className="text-dark border-dark group border-2 text-xl px-6 py-3 my-2 flex items-center uppercase hover:text-light hover:bg-dark hover:border-dark">
+          <div className="flex flex-col md:flex-row gap-8">
+            <button className="text-dark border-dark  group border-2 text-xl px-6 py-3 my-2 flex items-center justify-center uppercase hover:text-light hover:bg-dark hover:border-dark">
               Resume
               <span className="group-hover:translate-y-2 duration-300">
                 <BsDownload className="ml-3 text-2xl" />
               </span>
             </button>
-            <button className="text-dark border-dark group border-2  text-xl px-6 py-3 my-2 flex items-center uppercase hover:text-light hover:bg-dark hover:border-dark">
+            <button className="text-dark border-dark text-center group border-2  text-xl px-6 py-3 my-2 flex items-center justify-center uppercase hover:text-light hover:bg-dark hover:border-dark">
               Portfolio
               <span className="group-hover:translate-y-2 duration-300">
                 <BsDownload className="ml-3 text-2xl" />
@@ -40,12 +40,13 @@ const Home = () => {
             duration={500}
             className="group flex flex-wrap items-center"
           >
-            <p className="text-2xl">
-              Let me tell you a bit more about what I do
-            </p>
-            <span className="ml-3">
+            <div className="flex flex-wrap gap-4">
+              <p className="text-2xl hidden sm:inline-flex">
+                Let me tell you a bit more about what I do
+              </p>
+              <p className="text-2xl  sm:hidden">Find out more</p>
               <BsArrowRightSquare className="text-3xl group-hover:rotate-90 origin-center duration-300" />
-            </span>
+            </div>
           </Link>
         </div>
       </div>

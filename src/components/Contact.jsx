@@ -42,13 +42,21 @@ const Contact = () => {
           </button>
         </form>
         <div className="flex gap-x-20 m-8 lg:hidden">
-          <a href="/">
+          <a
+            href="www.linkedin.com/in/inna-reshetnyak-b2a538102"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin className="text-4xl duration-300 hover:scale-125" />
           </a>
-          <a href="/">
+          <a href="https://t.me/InnaRre" target="_blank" rel="noreferrer">
             <FaTelegramPlane className="text-4xl duration-300 hover:scale-125" />
           </a>
-          <a href="/">
+          <a
+            href="mailto:inna.zhelezovskaya@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <HiOutlineMail className="text-4xl duration-300 hover:scale-125" />
           </a>
         </div>

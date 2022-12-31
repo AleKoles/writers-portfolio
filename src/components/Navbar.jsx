@@ -14,7 +14,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="z-20 fixed w-full h-20 flex justify-between items-center px-4 px-8 md:px-20 bg-primary text-light">
+    <div className="z-20 fixed w-full h-20 flex justify-between items-center px-4 md:px-8 lg:px-20 bg-primary text-light">
       <div className="flex justify-between items-center gap-4">
         <FaQuoteLeft />
         <h1 className="text-2xl font-semibold">Inna Zhelezovskaya</h1>
@@ -82,7 +82,9 @@ const Navbar = () => {
           <li className="w-[150px] h-[60px] flex justify-between items-center -ml-24 hover:ml-0 duration-300 bg-primary">
             <a
               className="flex justify-between px-4 items-center w-full text-light"
-              href="/"
+              href="www.linkedin.com/in/inna-reshetnyak-b2a538102"
+              rel="noreferrer"
+              target="_blank"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -91,7 +93,9 @@ const Navbar = () => {
           <li className="w-[150px] h-[60px] flex justify-between items-center -ml-24 hover:ml-0 duration-300 bg-[#857B71]">
             <a
               className="flex justify-between px-4 items-center w-full text-light"
-              href="/"
+              href="mailto:inna.zhelezovskaya@gmail.com"
+              rel="noreferrer"
+              target="_blank"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -99,7 +103,9 @@ const Navbar = () => {
           <li className="w-[150px] h-[60px] flex justify-between items-center -ml-24 hover:ml-0 duration-300 bg-[#9c9084]">
             <a
               className="flex justify-between px-4 items-center w-full text-light"
-              href="/"
+              href="https://t.me/InnaRre"
+              rel="noreferrer"
+              target="_blank"
             >
               Telegram <FaTelegramPlane size={30} />
             </a>

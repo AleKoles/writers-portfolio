@@ -20,22 +20,34 @@ const Work = () => {
           </div>
 
           <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
-            <div className="shadow-xl flex flex-col text-dark p-4">
-              <div>
-                <h5 className="text-2xl font-semibold">
-                  Top Facts You Need to Know about 5G
-                </h5>
-                <p className="text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit...
-                </p>
-              </div>
-              <div className="flex justify-between">
-                <button>Read</button>
-                <button>See published</button>
+            <div
+              className="shadow-2xl text-dark "
+              style={{
+                backgroundImage: `url(${background})`,
+              }}
+            >
+              <div className="p-4 flex flex-col bg-light bg-opacity-75">
+                <div>
+                  <h5 className="text-2xl font-semibold">
+                    Top Facts You Need to Know about 5G
+                  </h5>
+                  <p className="text-lg">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit...
+                  </p>
+                </div>
+                <div className="flex justify-between">
+                  <button className="text-dark border-dark group border-2 text-lg px-4 py-2 my-2 flex items-center hover:text-light hover:bg-dark hover:border-dark">
+                    Read
+                  </button>
+                  <button className="text-dark border-dark group border-2 text-lg px-4 py-2 my-2 flex items-center hover:text-light hover:bg-dark hover:border-dark">
+                    See published
+                  </button>
+                </div>
               </div>
             </div>
           </div>
