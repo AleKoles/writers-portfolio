@@ -1,12 +1,13 @@
 import React from "react";
 
+import internet from "../assets/5G.jpg";
 import background from "../assets/remington-landscape2.jpg";
 
 const Work = () => {
   return (
     <div
       name="work"
-      className="w-full h-fit lg:h-screen bg-cover"
+      className="w-full h-fit bg-fixed lg:h-screen bg-cover"
       style={{
         backgroundImage: `url(${background})`,
       }}
@@ -21,14 +22,14 @@ const Work = () => {
 
           <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
             <div
-              className="shadow-2xl text-dark "
+              className="shadow-2xl text-dark bg-cover"
               style={{
-                backgroundImage: `url(${background})`,
+                backgroundImage: `url(${internet})`,
               }}
             >
-              <div className="p-4 flex flex-col bg-light bg-opacity-75">
+              <div className="p-4 flex flex-col gap-1 bg-light bg-opacity-50">
                 <div>
-                  <h5 className="text-2xl font-semibold">
+                  <h5 className="text-2xl font-semibold mb-1">
                     Top Facts You Need to Know about 5G
                   </h5>
                   <p className="text-lg">
@@ -41,9 +42,16 @@ const Work = () => {
                   </p>
                 </div>
                 <div className="flex justify-between">
-                  <button className="text-dark border-dark group border-2 text-lg px-4 py-2 my-2 flex items-center hover:text-light hover:bg-dark hover:border-dark">
-                    Read
+                  <button class="show" aria-haspopup="true">
+                    Show Modal
                   </button>
+                  <div class="mask" role="dialog"></div>
+                  <div class="modal" role="alert">
+                    <button class="close" role="button">
+                      X
+                    </button>
+                  </div>
+
                   <button className="text-dark border-dark group border-2 text-lg px-4 py-2 my-2 flex items-center hover:text-light hover:bg-dark hover:border-dark">
                     See published
                   </button>

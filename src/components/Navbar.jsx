@@ -15,29 +15,52 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   return (
     <div className="z-20 fixed w-full h-20 flex justify-between items-center px-4 md:px-8 lg:px-20 bg-primary text-light">
-      <div className="flex justify-between items-center gap-4">
-        <FaQuoteLeft />
-        <h1 className="text-2xl font-semibold">Inna Zhelezovskaya</h1>
-      </div>
+      <Link to="home" smooth={true} duration={500} className="cursor-pointer">
+        <div className="flex justify-between items-center gap-4">
+          <FaQuoteLeft />
+          <h1 className="text-2xl font-semibold">Inna Zhelezovskaya</h1>
+        </div>
+      </Link>
+
       <div>
         <ul className="hidden md:flex gap-6 text-lg uppercase">
           <li className="hover:scale-110 duration-150 ease-in-out">
-            <Link to="home" smooth={true} duration={500}>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
               Home
             </Link>
           </li>
           <li className="hover:scale-110 duration-150 ease-in-out">
-            <Link to="about" smooth={true} duration={500}>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
               About
             </Link>
           </li>
           <li className="hover:scale-110 duration-150 ease-in-out">
-            <Link to="work" smooth={true} duration={500}>
+            <Link
+              to="work"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
               Work
             </Link>
           </li>
           <li className="hover:scale-110 duration-150 ease-in-out">
-            <Link to="contact" smooth={true} duration={500}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
               Contact
             </Link>
           </li>
