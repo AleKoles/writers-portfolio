@@ -42,16 +42,9 @@ const Work = () => {
                   </p>
                 </div>
                 <div className="flex justify-between">
-                  <button class="show" aria-haspopup="true">
-                    Show Modal
+                  <button className="text-dark border-dark group border-2 text-lg px-4 py-2 my-2 flex items-center hover:text-light hover:bg-dark hover:border-dark">
+                    Read
                   </button>
-                  <div class="mask" role="dialog"></div>
-                  <div class="modal" role="alert">
-                    <button class="close" role="button">
-                      X
-                    </button>
-                  </div>
-
                   <button className="text-dark border-dark group border-2 text-lg px-4 py-2 my-2 flex items-center hover:text-light hover:bg-dark hover:border-dark">
                     See published
                   </button>
