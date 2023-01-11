@@ -1,5 +1,5 @@
 import React from "react";
-import { BsDownload, BsArrowRightSquare } from "react-icons/bs";
+import { BsArrowDown } from "react-icons/bs";
 import background from "../assets/remington-landscape.jpg";
 import { Link } from "react-scroll";
 
@@ -20,17 +20,11 @@ const Home = () => {
             An experienced content writer and narrative designer.
           </h3>
           <div className="flex flex-col md:flex-row gap-8">
-            <button className="text-dark border-dark  group border-2 text-xl px-6 py-3 my-2 flex items-center justify-center uppercase hover:text-light hover:bg-dark hover:border-dark">
+            <button className="border-2 text-xl px-6 py-3 my-2 flex items-center justify-center uppercase text-light bg-dark hover:text-dark hover:border-dark hover:bg-light">
               Resume
-              <span className="group-hover:translate-y-2 duration-300">
-                <BsDownload className="ml-3 text-2xl" />
-              </span>
             </button>
-            <button className="text-dark border-dark text-center group border-2  text-xl px-6 py-3 my-2 flex items-center justify-center uppercase hover:text-light hover:bg-dark hover:border-dark">
+            <button className="border-2 text-xl px-6 py-3 my-2 flex items-center justify-center uppercase text-light bg-dark hover:text-dark hover:border-dark hover:bg-light">
               Portfolio
-              <span className="group-hover:translate-y-2 duration-300">
-                <BsDownload className="ml-3 text-2xl" />
-              </span>
             </button>
           </div>
 
@@ -45,7 +39,7 @@ const Home = () => {
                 Let me tell you a bit more about what I do
               </p>
               <p className="text-2xl  sm:hidden">Find out more</p>
-              <BsArrowRightSquare className="text-3xl group-hover:rotate-90 origin-center duration-300" />
+              <BsArrowDown className="mt-1 text-2xl group-hover:translate-y-4 duration-300" />
             </div>
           </Link>
         </div>
